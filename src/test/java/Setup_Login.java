@@ -1,3 +1,4 @@
+import Model.Login;
 import com.github.javafaker.Faker;
 import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.http.ContentType;
@@ -18,14 +19,11 @@ public class Setup_Login {
     public void Login(){
         baseURI ="https://test.mersys.io/";
 
-        Map<String, String> userCredential=new HashMap<>();
-        userCredential.put("username","turkeyts");
-        userCredential.put("password","TechnoStudy123");
-        userCredential.put("rememberMe","true");
+        Login login = new Login();
 
         Cookies cookies=
                 given()
-                        .body(userCredential)
+                        .body(login)
                         .contentType(ContentType.JSON)
                         .when()
                         .post("/auth/login")

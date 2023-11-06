@@ -15,7 +15,6 @@ public class Discounts extends Setup_Login {
 
         disc.description=randomUreteci.backToTheFuture().character();
         disc.code=randomUreteci.ancient().hero();
-        disc.code=randomUreteci.code().imei();
         disc.active=randomUreteci.bool().bool();
         disc.priority=randomUreteci.number().numberBetween(1,10);
 

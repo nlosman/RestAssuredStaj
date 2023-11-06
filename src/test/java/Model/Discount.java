@@ -4,7 +4,7 @@ public class Discount {
     public String description;
     public String code;
     public int priority;
-    public Boolean active;
+    public boolean active;
 
     public String id;
 

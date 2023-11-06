@@ -89,7 +89,7 @@ public class Bank_Accounts extends Setup_Login {
         ;
     }
 
-    @Test(dependsOnMethods = "updateBankAccount")
+    @Test(dependsOnMethods = "deleteBankAccount")
     public void deleteBankAccountNegative() {
 
         given()
@@ -102,7 +102,10 @@ public class Bank_Accounts extends Setup_Login {
                 .then()
                 .log().body()
                 .statusCode(400)
+                .body("message", containsString("bank account must be exist"))
         ;
     }
+
+
 
 }

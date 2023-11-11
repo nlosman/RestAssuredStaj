@@ -16,14 +16,6 @@ public class School_Departments extends Setup_Login {
     String departmentID = "";
 
 
-//        "id": null,
-//            "name": "lkljl",
-//            "code": "741",
-//            "active": true,
-//            "school": "646cbb07acf2ee0d37c6d984",
-//            "sections": [],
-//        "constants": []
-
 
     @Test
     public void CreateDepartment() {
